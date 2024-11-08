@@ -1,15 +1,15 @@
-from .datasets.dataset import CIFAR100, CIFAR100Attack,\
+from dataset import CIFAR100, CIFAR100Attack,\
      CIFAR100Corrupt, CIFAR100NoisyCore, CIFAR100AttackCore,\
         CIFAR100Noisy, CIFAR100Core, CIFAR100CorruptCore
-from .datasets.dataset import TinyNoisy, TinyAttack, TinyAttackCore, TinyNoisyCore
-from .datasets.folder import ImageFolder, ImageFolderCore
-from .models.resnet import ResNet18, ResNet34, ResNet50, ResNet50Extractor,\
+from dataset import TinyNoisy, TinyAttack, TinyAttackCore, TinyNoisyCore
+from folder import ImageFolder, ImageFolderCore
+from resnet import ResNet18, ResNet34, ResNet50, ResNet50Extractor,\
     get_resnet, ResNetExtractorT
-from .models.googlenet import GoogLeNet
-from .models.efficientnet import EfficientNetB0
-from .models.vgg import VGG, VGGExtractor
-from .models.senet import SENet18
-from .models.shufflenet import ShuffleNetV2, ShuffleNetExtractor
+from googlenet import GoogLeNet
+from efficientnet import EfficientNetB0
+from vgg import VGG, VGGExtractor
+from senet import SENet18
+from shufflenet import ShuffleNetV2, ShuffleNetExtractor
 
 import torchvision.transforms as transforms
 from torch.optim.lr_scheduler import StepLR, MultiStepLR

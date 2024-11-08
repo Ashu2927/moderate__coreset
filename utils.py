@@ -1,3 +1,9 @@
+import sys
+
+sys.path.insert(0, '/kaggle/working/moderate__coreset/datasets')
+sys.path.insert(0, '/kaggle/working/moderate__coreset/models')
+
+
 from dataset import CIFAR100, CIFAR100Attack,\
      CIFAR100Corrupt, CIFAR100NoisyCore, CIFAR100AttackCore,\
         CIFAR100Noisy, CIFAR100Core, CIFAR100CorruptCore

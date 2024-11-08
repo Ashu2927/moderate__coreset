@@ -5,10 +5,10 @@ import pickle
 from typing import Any, Callable, Optional, Tuple
 import numpy as np
 from PIL import Image
-from .folder import ImageFolder
+from folder import ImageFolder
 
-from .utils import check_integrity, download_and_extract_archive
-from .vision import VisionDataset
+from utils import check_integrity, download_and_extract_archive
+from vision import VisionDataset
 
 
 class CIFAR10(VisionDataset):
